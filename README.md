@@ -25,22 +25,22 @@ This stands for quoted expression, and is a type of Lisp Expression that is not 
 |`eval`| Takes a Q-Expression and evaluates it as if it were a S-Expression|
 **Examples**
 >lispy> list 1 2 3 4
-{1 2 3 4}
+>{1 2 3 4}
 
 >lispy> {head (list 1 2 3 4)}
-{head (list 1 2 3 4)}
+>{head (list 1 2 3 4)}
 
 >lispy> eval {head (list 1 2 3 4)}
-{1}
+>{1}
 
 >lispy> tail {tail tail tail}
-{tail tail}
+>{tail tail}
 
 >lispy> eval (tail {tail tail {5 6 7}})
-{6 7}
+>{6 7}
 
 >lispy> eval (head {(+ 1 2) (+ 10 20)})
-3
+>3
 
 **Sources**
 http://buildyourownlisp.com/

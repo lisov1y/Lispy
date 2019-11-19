@@ -26,15 +26,20 @@ This stands for quoted expression, and is a type of Lisp Expression that is not 
 **Examples**
 >lispy> list 1 2 3 4
 {1 2 3 4}
-lispy> {head (list 1 2 3 4)}
+
+>lispy> {head (list 1 2 3 4)}
 {head (list 1 2 3 4)}
-lispy> eval {head (list 1 2 3 4)}
+
+>lispy> eval {head (list 1 2 3 4)}
 {1}
-lispy> tail {tail tail tail}
+
+>lispy> tail {tail tail tail}
 {tail tail}
-lispy> eval (tail {tail tail {5 6 7}})
+
+>lispy> eval (tail {tail tail {5 6 7}})
 {6 7}
-lispy> eval (head {(+ 1 2) (+ 10 20)})
+
+>lispy> eval (head {(+ 1 2) (+ 10 20)})
 3
 
 **Sources**

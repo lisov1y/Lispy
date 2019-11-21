@@ -3,6 +3,7 @@
 Custom Lisp language written in C
 
 **Installation and Usage**
+
 Copy the repo with all Lispy source files:
 > git clone https://github.com/lisov1y/Lispy
 
